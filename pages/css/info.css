@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.continaer h1 h2 h3 h4 h5 h6 {
+    color: #F93B1D;
+}
+
+.main { 
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.main .left_side{
+    width: 60%;
+    background-color: #F9F9F9;;
+}
+
+
+.main .right_side {
+    width: 40%;
+  
+}
+.container {
+    margin-top: 50px;
+    margin-left: 150px;
+    height: 1080px;
+    width: 70%;
+    background-color: ;
+    
+}
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: #000000;
+    margin-top: 10px;
+}
+input {
+    width: 100%;
+}
+
+.left_side .form form{
+    display: flex;
+    margin-top: 78px;
+}
+.left_side .form form  .div{
+    margin-left: 56px;
+
+}
+.left_side .form label{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+
+
+}
+
+.left_side .container .form input {
+   
+width: 371.5px;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #BCBCBC;
+border-radius: 4px;
+
+}
+
+.left_side .download_photo {
+    margin-top: 83px;
+}
+.left_side .download_photo div {
+    display: flex;
+}
+.download_photo div p {
+    font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+
+/* off black */
+
+color: #1A1A1A;
+}
+
+.left_side .download_photo div .btn {
+    margin-left: 18px;
+    border : none;
+    cursor: pointer;
+    width: 107px;
+height: 27px;
+left: 401px;
+top: 325px;
+
+background: #0E80BF;
+border-radius: 4px;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: white;
+}
+
+.left_side .about {
+    margin-top: 55px;
+}
+
+.left_side .about .about_input {
+  margin-top: 8px;
+}
+
+.about p {
+    font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height, or 131% */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+
+.about textarea{
+    width: 100%;
+    height: 103px;
+    
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+}
+.left_side .email {
+    margin-top: 45px;
+}
+
+.left_side .email input {
+    margin-top: 8px;
+}
+.email label {
+    font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height, or 131% */
+
+
+align-items: center;
+
+color: #000000;
+}
+
+.email input {
+    width: 100%;
+    height: 48px;
+    
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+}
+
+.left_side .phone {
+    margin-top: 64px;
+}
+
+.left_side .phone input {
+    margin-top: 8px;
+}
+.phone p {
+    
+    font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height, or 131% */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+
+.phone input {
+   
+    width: 100%;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #BCBCBC;
+border-radius: 4px;
+}
+
+.left_side .next_page {
+   margin-top: 189px;
+    
+}
+.left_side .next_page button {
+    margin-bottom: 65px;
+    text-align: center;
+    margin-left: 648px;
+}
+
+
+.left_side .next_page button {
+    width: 151px;
+height: 48px;
+
+
+
+background: #6B40E3;
+border-radius: 4px;
+border: none;
+cursor: pointer;
+
+color: #FFFFFF;
+
+}
+ 
+
+.right_side .container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.right_side .container .name  {
+    color: #F93B1D;
+   height: 35px;
+   width: 100%;
+   width: 123px;
+height: 42px;
+
+
+font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 34px;
+line-height: 42px;
+    
+}
+.right_side .name div {
+    display: flex;
+}
+#surname_result {
+    margin-left: 20px;
+    
+    
+    
+}
+
+
+.right_side .container .info {
+    height: 60px;
+     width: 100%;
+     
+}
+
+.right_side .container .aboutRes  {   
+    height: 140px;
+
+    color: #F93B1D;
+   width: 100%;
+
+   width: 118px;
+height: 22px;
+left: 80px;
+top: 213px;
+
+font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+
+}
+
+.right_side .container .aboutRes p {
+    margin-top: 20px;
+    word-wrap: break-word;
+}
+
