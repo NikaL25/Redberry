@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/info.css" />
+    <title>Info</title>
+  </head>
+  <body>
+  
+        <div class="main"> 
+            <div class="left_side">
+                <div class="container">
+    
+                    <div class="header">                        
+                        <h2>ᲞᲘᲠᲐᲓᲘ ᲘᲜᲤᲝ</h2>
+                        <div>
+                            <div class="divider"></div>
+                        </div>               
+                    </div>
+    
+                    <div class="form"> 
+                        <form action="/action_page.php">
+                         <div>
+                            <label for="name">სახელი</label><br />
+                            <input type="text" id="name" onkeyup='saveValue(this)' oninput="getName()" name="name"  placeholder="ნიკა" minlength="2" lang="ka" required>
+                        </div>
+                            
+                           <div class="div">        
+                               <label for="name">გვარი</label><br>
+                               <input type="text" id="surname" onkeyup='saveValue(this)' oninput="getSurname()" name="surname"   placeholder="ლომიაშვილი " minlength="2" lang="ka" required>                      
+                           </div>
+                          </form>
+                        </div>  
+    
+                         <!-- Photo -->
+                         <div class="download_photo">
+                            <div>
+                                <p>პირადი ფოტოს ატვირთვა</p>
+                           
+                          
+                              <input onchange="download(this)" onkeyup='saveValue(this)' type="file" >ატვირთვა</input>
+                            </div>
+                          </div>
+    
+                             <!-- About -->
+                  <div class="about">
+                    <p><label >ჩემ შესახებ (არასავალდებულო)</label></p>
+                           <textarea class="about_input" onkeyup='saveValue(this)' oninput="getAbout()">  </textarea>
+                </div>
+    
+                   <!-- Email -->
+                   <div class="email">
+                    <p><label for="email">ელ.ფოსტა</label></p>
+                    <input type="email" id="email_input" onkeyup='saveValue(this)' oninput="getEmail()" name="surname"  value="" placeholder="ლომიაშვილი " minlength="2" lang="ka" required>
+                </div>
+    
+                   <!-- Phone -->
+                   <div class="phone">
+                    <p><label for="email">მობილურის ნომერი</label></p>
+                    <input type="tel" id="phone_input" onkeyup='saveValue(this)' oninput="getPhone()" name="surname"  value="" placeholder="ლომიაშვილი " minlength="2" lang="ka" required>
+                </div>
+    
+    
+                <!-- Buttons -->
+                <div class="next_page">
+                    <a href="experience.html">
+                        <button>ᲨᲔᲛᲓᲔᲒᲘ</button>
+                    </a>
+                   </div>
+        
+    
+    
+                </div>
+         </div>
+    
+            <div class="right_side">
+    
+                
+               
+                <div class="container">
+                    <div class="name">
+                        <div>
+                            <h2 id="name_result" > </h2>
+                            <h2 id="surname_result"> </h2>
+                        </div>
+                            
+                        </div>
+    
+                        <div id="wrapper" >
+        
+                      
+                        </div>
+    
+                
+                        <div class="info">
+                            <div>
+                                <p id="email_result"></p>
+                                <p id="phone_result"></p>
+                            </div>
+                        </div>
+                
+                        <div class="aboutRes" >
+                            <div>
+                                <h3>ჩემ შესახებ</h3>
+                            <p class="about_result"></p> 
+                          </div>
+                          </div>
+                           
+    
+        </div>
+       
+            
+       
+    
+    
+        <script>
+    
+            function getName() {
+                let inputName = document.getElementById("name").value;            
+                document.getElementById("name_result").innerHTML = " "  + inputName;
+            }
+    
+            function getSurname() {
+                let inputSurname = document.getElementById("surname").value;
+                document.getElementById("surname_result").innerHTML = " "  + inputSurname;
+            }
+    
+           function getAbout () {
+               let inputAbout = document.querySelector(".about_input").value;
+               document.querySelector(".about_result").innerHTML = " "  + inputAbout;
+           }
+    
+           function getEmail() {
+            let inputEmail = document.getElementById("email_input").value;
+            document.getElementById("email_result").innerHTML = " " + inputEmail;
+           }
+            
+           function getPhone() {
+            let inputPhone = document.getElementById("phone_input").value;
+            document.getElementById("phone_result").innerHTML = " " + inputPhone;
+           }
+        
+    
+    
+        let wrapper = document.getElementById("wrapper");
+    
+    
+           function download() {
+            let file = input.files[0];
+            let reader = new FileReader();
+            reader.readAsDataURL(file);
+    
+            reader.onload = function() {
+                let img = document.createElement('img');
+                wrapper.appendChild(img);
+                img.src = reader.result;
+            }
+           }    
+    
+    
+    
+    document.getElementById("name_result").value = getSavedValue("txt_1");
+    document.getElementById("txt_2").value = getSavedValue("txt_2");
+    
+    function saveValue(e) {
+      var id = e.id;
+      var val = e.value;
+      localStorage.setItem(id, val);
+    }
+    
+    function getSavedValue(v) {
+      if (localStorage.getItem(v) === null) {
+        return "";
+      }
+      return localStorage.getItem(v);
+    }
+        </script>   
+       
+      </body>
+    </html>
+    
